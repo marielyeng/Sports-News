@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "outDir": "build",
+        "rootDir": ".",
+        "module": "ESNext",
+        "target": "ES5",
+        "lib": ["ES2017", "ESNext", "DOM"],
+        "sourceMap": true,
+        "allowJs": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "importHelpers": true,
+        "strictNullChecks": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": false,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        "downlevelIteration": true,
+        "strict": true,
+        "noEmit": true,
+        "traceResolution": true
+    },
+    "exclude": [],
+    "include": [
+        "./src/*.ts",
+        "./src/*.tsx",
+        "./src/**/*.ts",
+        "./src/*.d.ts",
+        "./src/**/*.tsx",
+        "./src/**/*.d.ts",
+        "./src/**/*.d.tsx",
+        "node_modules/dist/**/*.d.ts",
+        "../../node_modules/dist/**/*.d.ts"
+    ]
+}

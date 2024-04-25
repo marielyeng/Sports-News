@@ -1,0 +1,67 @@
+{
+    "name": "server",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@apollo/datasource-rest": "^6.2.2",
+        "@apollo/server": "^4.10.4",
+        "@babel/runtime": "^7.24.4",
+        "apollo-datasource-rest": "^3.7.0",
+        "body-parser": "^1.20.2",
+        "core-js": "^3.37.0",
+        "graphql": "^16.8.1",
+        "graphql-depth-limit": "^1.1.0",
+        "graphql-middleware": "^6.1.35",
+        "graphql-query-complexity": "^0.12.0",
+        "graphql-rate-limit": "^3.3.0",
+        "graphql-tag": "^2.12.6",
+        "graphql-tools": "^9.0.1"
+    },
+    "scripts": {
+        "start": "export $(xargs <../../env.local) && webpack && yarn copy && concurrently \"yarn dev:nodemon\" \"yarn dev:watch\" &",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "dev:watch": "webpack --watch",
+        "dev:nodemon": "nodemon ./build/server.bundle.js"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.24.1",
+        "@babel/core": "^7.24.4",
+        "@babel/node": "^7.23.9",
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
+        "@babel/plugin-transform-classes": "^7.24.1",
+        "@babel/plugin-transform-runtime": "^7.24.3",
+        "@babel/preset-env": "^7.24.4",
+        "@babel/preset-typescript": "^7.24.1",
+        "@types/cors": "^2.8.17",
+        "@types/graphql-depth-limit": "^1.1.6",
+        "@types/jest": "^29.5.12",
+        "@types/lodash.get": "^4.4.9",
+        "@types/node": "^20.12.7",
+        "babel-loader": "^9.1.3",
+        "cross-env": "^7.0.3",
+        "jest": "^29.7.0",
+        "kill-port": "^2.0.1",
+        "mkdirp": "^3.0.1",
+        "node-dev": "^8.0.0",
+        "nodemon": "^3.1.0",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^3.2.5",
+        "rimraf": "^5.0.5",
+        "ts-jest": "^29.1.2",
+        "ts-loader": "^4.5.0",
+        "typescript": "^5.4.5",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-graphql-loader": "^1.0.2",
+        "webpack-node-externals": "^3.0.0",
+        "wrapper-webpack-plugin": "^2.2.2"
+    }
+}
