@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@apollo/client": "^3.10.1",
         "@apollo/react-hooks": "^4.0.0",
         "@apollographql/graphql-playground-react": "^1.7.42",
         "@reduxjs/toolkit": "^2.2.3",
@@ -37,6 +36,7 @@
         ]
     },
     "devDependencies": {
+        "@apollo/client": "^3.10.1",
         "@apollo/react-testing": "^4.0.0",
         "@babel/cli": "^7.24.1",
         "@babel/core": "^7.24.4",

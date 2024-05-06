@@ -1,0 +1,24 @@
+{
+  "name": "sports-news",
+  "version": "1.0.0",
+  "description": "Mini Sports News App",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "author": "Mariel Suing",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.10.1",
+    "concurrently": "^8.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

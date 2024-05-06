@@ -1,0 +1,20 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "type": "basketball",
+            "title": "Nuggets won the PBA",
+            "description": "Lorem Ipsum Dolor",
+            "createdAt": "07/23/2023"
+        }
+    ],
+    "trends": [
+        {
+            "id": 1,
+            "type": "basketball",
+            "title": "Nuggets won the PBA",
+            "description": "Lorem Ipsum Dolor",
+            "createdAt": "07/23/2023"
+        }
+    ]
+}
