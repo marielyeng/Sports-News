@@ -12,7 +12,7 @@ export interface IArticleDto {
 
 export interface IArticleParam {
     type?: string;
-    limit?: string;
+    limit?: number;
 }
 
 export interface IRequesContext {

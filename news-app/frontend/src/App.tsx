@@ -6,7 +6,6 @@ import { ApolloProvider, useApolloClient } from '@apollo/client';
 import React from 'react';
 import { AppRoute } from 'AppRoute';
 
-
 const App: React.FC = () => {
   const client = useApolloClient();
   return (

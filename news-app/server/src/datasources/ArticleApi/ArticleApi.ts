@@ -1,6 +1,5 @@
 import { RESTDataSource } from '@apollo/datasource-rest';
-import { IArticleDto } from '../common/types';
-import { strict } from 'assert';
+import { IArticleDto } from '../../common/types';
 
 class ArticleApi extends RESTDataSource {
     override baseURL = "http://localhost:7000/";
@@ -19,8 +18,8 @@ class ArticleApi extends RESTDataSource {
 
             const articles: IArticleDto[] = await this.get('articles', { params });
             return articles;
-        }
-        catch(error) {
+        } catch(error) {
+            console.log('An error occurred');
             throw error;
         }
     }
@@ -28,13 +27,13 @@ class ArticleApi extends RESTDataSource {
     public async getArticleById(id: number): Promise<IArticleDto> {
         try {
             const params: {[ key: string ]: string} = {};
-            if (id) {
-                const articleId = id.toString();
-                const article: IArticleDto = await this.get(`articles/${articleId}`, { params });
-                return article;
-            }
-        }
-        catch(error) {
+            
+            const articleId = id.toString();
+            const article: IArticleDto = await this.get(`articles/${articleId}`, { params });
+            return article;
+            
+        } catch(error) {
+            console.log('An error occurred');
             throw error;
         }
     }
