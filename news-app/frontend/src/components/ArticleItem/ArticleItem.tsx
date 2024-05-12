@@ -1,5 +1,5 @@
 import React from "react";
-import { IArticle } from "common";
+import { IArticle } from "../../common";
 
 export interface IArticleItemProps {
     articles: IArticle;
@@ -18,8 +18,8 @@ export const ArticleItem: React.FC<IArticleItemProps> = ({
 
     return (
         <div onClick={handleArticleOnClick}>
-            <h1>{title}<span>{createdAt}</span></h1>
-            <p>{description}</p>
+            <h2> {title} <span> {createdAt} </span> </h2>
+            <p> {description} </p>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
-import { GET_TOP_STORIES, IGetTrendsQueryResponse } from "data/queries/getTopStories";
+import { GET_TOP_STORIES, IGetTrendsQueryResponse } from "../../data/queries";
 
-export const useGetArticle = (type?: string) => {
+export const useGetTopStory = (type?: string) => {
     const { loading, data, error } = useQuery<IGetTrendsQueryResponse>(GET_TOP_STORIES, {
         variables: {
             type,

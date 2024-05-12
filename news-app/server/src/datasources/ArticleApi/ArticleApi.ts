@@ -2,7 +2,7 @@ import { RESTDataSource } from '@apollo/datasource-rest';
 import { IArticleDto } from '../../common/types';
 
 class ArticleApi extends RESTDataSource {
-    override baseURL = "http://localhost:7000/";
+    baseURL = "http://localhost:7000/";
 
     public async getArticles(type?: string, limit?: number): Promise<IArticleDto[]> {
         try {
@@ -29,7 +29,7 @@ class ArticleApi extends RESTDataSource {
             const params: {[ key: string ]: string} = {};
             
             const articleId = id.toString();
-            const article: IArticleDto = await this.get(`articles/${articleId}`, { params });
+            const article: IArticleDto = await this.get(`article/${articleId}`, { params });
             return article;
             
         } catch(error) {

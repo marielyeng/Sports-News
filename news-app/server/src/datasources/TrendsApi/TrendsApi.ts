@@ -2,7 +2,7 @@ import { RESTDataSource } from '@apollo/datasource-rest';
 import { IArticleDto } from '../../common/types';
 
 class TrendsApi extends RESTDataSource {
-    override baseURL = "http://localhost:7000/";
+    baseURL = "http://localhost:7000/";
 
     public async getAllTrends(type?: string): Promise<IArticleDto[]> {
         try {

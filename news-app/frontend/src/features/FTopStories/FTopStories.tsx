@@ -1,30 +1,56 @@
+/* eslint-disable */
 import React from "react";
-import { IArticle } from "common";
-import { ArticleItem } from "components/ArticleItem";
+import { IArticle } from "../../common";
 import { useNavigate } from "react-router-dom";
-import { TopStoryItem } from "components/TopStoryItem";
+import { TopStoryItem } from "../../components/TopStoryItem";
+import { useGetTopStory } from "../../hooks/useGetTopStories";
+import styled from "styled-components";
 
 export interface IArticleProps {
     type?: string;
 }
 
 export const FTopStories: React.FC<IArticleProps> = ({ type }) => {
-    const { loading, data, error } = useGetArticles(type);
+    const { loading, data, error } = useGetTopStory(type);
     const navigate = useNavigate();
 
     const handleTrendClick = (id: number) => {
-        navigate(`/article/${id}`);
+        navigate(`/article/:${id}`);
+    }
+
+    if (loading) {
+        return <>Loading...</>;
+    }
+
+    if (error) {
+        return <>{error?.message}</>
     }
 
     return (
-        <div>
+        <Container>
             <ol>
-            {data.trends.map((articles: IArticle, index: number) => {
-               <li key={index}>
-                <TopStoryItem articles={article} onClick={() => handleTrendClick(article.id)} />
-               </li>
-            })}
+                {data?.trends.map((article: IArticle, index: number) => (
+                    <List key={index}>
+                        <TopStoryItem articles={article} onClick={() => handleTrendClick(article.id)} />
+                    </List>
+                ))}
             </ol>
-        </div>
+        </Container>
     );
 }
+
+const Container = styled.div`
+    margin: 16px 16px;
+    padding: 5px;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px gray;
+    width: 375px;
+    height: 100%;
+    position: relative;
+`;
+
+const List = styled.li`
+    padding: 10px;
+`
+

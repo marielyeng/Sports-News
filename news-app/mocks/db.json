@@ -3,8 +3,50 @@
         {
             "id": 1,
             "type": "basketball",
-            "title": "Nuggets won the PBA",
-            "description": "Lorem Ipsum Dolor",
+            "title": "PBA: Meralco ousts NLEX",
+            "description": "MANILA, Philippines–Neck-and-neck with the enemy for most of the contest, Meralco found gaps in NLEX’s game in the final period to carve out a 100-81 and punch a ticket to the PBA Philippine Cup semifinals. Chris Banchero starred for the Bolts, who disposed of their corporate sibling in two games and arranged a best-of-seven duel against old tormentor Barangay Ginebra.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 2,
+            "type": "basketball",
+            "title": "PBA: Rain or Shine bounces back to even Series",
+            "description": "MANILA, Philippines–With its top gun frosty once again, Rain or Shine on Sunday turned to its youth brigade to slip past TNT, 121-113, and bring their best-of-three PBA Philippine Cup quarterfinal race to a decider. Jhonard Clarito set the tone early while Andrei Caracut put the finishing touches on the Elastopainters’ conquest of the Tropang Giga that leveled the short series to a game apiece.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 3,
+            "type": "football",
+            "title": "Sherwin Basindanan OT strike lift FEU to UAAP Football Finals",
+            "description": "SHERWIN Basindanan struck at extra time as defending champion Far Eastern University rallied past Ateneo, 2-1, to reach the UAAP Season 86 Men’s Football Final at the Rizal Memorial Stadium, Thursday night",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 4,
+            "type": "basketball",
+            "title": "NBA: Mavericks hold off Thunder for 2-1 lead",
+            "description": "DALLAS — Luka Doncic already had a balky right knee and an achy left ankle when he fell hard on his back while battling his primary defender, Lu Dort, for a loose ball. Not only did Doncic win the ensuing jump ball, the NBA scoring champion tracked down the loose ball that followed with his Dallas Mavericks clinging to a late lead.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 5,
+            "type": "football",
+            "title": "AFC Filipinas U17 suffers defeat to North Korea in Women's Asia Cup",
+            "description": "The Filipinas’ Under-17 team suffered their first setback in the 2024 AFC U-17 Women’s Asian Cup — a 6-0 drubbing by DPR Korea on Thursday at the Bali United Training Center in Indonesia. Jon Il-Chong scored in the 17th and 27th minutes of the contest for DPR Korea, which now has the solo lead of Group A. DPR Korea has six points and a plus-13 goal difference on the back of two straight comprehensive victories.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 7,
+            "type": "basketball",
+            "title": "Stehphen Holt tells PBA crowd: You want parity? We hear you.",
+            "description": "Stephen Holt and Terrafirma stunning win that allowed them to force San Miguel Beer into a do-or-die match in their PBA Philippine Cup quarterfinals seemed like a message sent across the league and its fans. This is what you want; you want a competitive league, Holt addressed the crowd in a postgame interview after the Dyip’s 106-95 win Saturday at Rizal Memorial Coliseum. “You want parity, and we hear you.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 8,
+            "type": "football",
+            "title": "Tanhai Annis takes on new role as assistant coach for Filipinas U17",
+            "description": "Tahnai Annis is off to international duty once again — this time as an assistant coach for the Philippine Girls U-17 Team that will compete for a 2024 FIFA U-17 Women’s World Cup ticket in the 2024 AFC U-17 Women’s Asian Cup this May 6–19 in Bali, Indonesia.",
             "createdAt": "07/23/2023"
         }
     ],
@@ -12,8 +54,43 @@
         {
             "id": 1,
             "type": "basketball",
-            "title": "Nuggets won the PBA",
-            "description": "Lorem Ipsum Dolor",
+            "title": "PBA: Terrafirma drags San Miguel by the collar into do-or-die",
+            "description": "Midnight refused to strike once again for Cinderella Terrafirma following a stunning win that pushed heavyweight San Miguel Beer to a fight for survival in their PBA Philippine Cup quarterfinal matchup. But for rookie Stephen Holt, the 106-95 win on Saturday afternoon at Rizal Memorial Coliseum allowed the Dyip to prove something for a long-time audience and the so-called casuals hungry to see something new to a league dominated by traditional powerhouses.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 2,
+            "type": "football",
+            "title": "UAAP 86 WFB: Shai Del Campo scores winner as La Salle downs UP",
+            "description": "With the match delicately poised at two goals each, the De La Salle Zobel alumna headed the ball home in the 90+4 minute to seal the victory for the Lady Booters. Del Campo’s winner provided the climactic finish after her teammate Maria Layacan brought La Salle back on level terms with a brace in the 25th and 31st minute.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 3,
+            "type": "football",
+            "title": "FEU becomes winningest UAAP Women's Football Program",
+            "description": "Albiño converted a free kick that broke the 1-1 stalemate to put the Lady Tamaraws ahead and eventually complete a perfect season for a record 12th title overall. Anicka Castañeda tried to restore parity late in the match, but her shot sailed past the crossbar.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 4,
+            "type": "basketball",
+            "title": "PBA: Beau Belga confident tables will turn",
+            "description": "Beau Belga, Rain or Shine’s foremost weapon throughout the Philippine Cup, found himself firing blanks in the Elasto Painters’ 116-99 loss to TNT in the PBA Philippine Cup quarterfinals on Friday night. The veteran big man was limited to just five points, finishing the contest at Smart Araneta Coliseum with a head-scratching 2-for-10 shooting.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 5,
+            "type": "football",
+            "title": "From Payatas to Morayta: Rebosura Sisters not wasting opportunity to shine on big stage",
+            "description": "Midnight refused to strike once again for Cinderella Terrafirma following a stunning win that pushed heavyweight San Miguel Beer to a fight for survival in their PBA Philippine Cup quarterfinal matchup. But for rookie Stephen Holt, the 106-95 win on Saturday afternoon at Rizal Memorial Coliseum allowed the Dyip to prove something for a long-time audience and the so-called casuals hungry to see something new to a league dominated by traditional powerhouses.",
+            "createdAt": "07/23/2023"
+        },
+        {
+            "id": 6,
+            "type": "basketball",
+            "title": "NBA: Mike Budenholzer agrees to become next Suns coach",
+            "description": "PHOENIX — Mike Budenholzer has agreed to coach the Phoenix Suns, according to multiple reports, as the franchise turns to the man who beat them in the 2021 NBA Finals. The 54-year-old Budenholzer replaces Frank Vogel, who was fired Thursday after one season. ESPN and The Athletic both reported that Budenholzer’s deal was for five years.",
             "createdAt": "07/23/2023"
         }
     ]

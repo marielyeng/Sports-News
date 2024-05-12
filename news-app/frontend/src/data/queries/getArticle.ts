@@ -1,5 +1,5 @@
 import { gql } from "@apollo/client";
-import { IArticle } from "common";
+import { IArticle } from "../../common";
 
 export interface IGetArticleQueryResponse {
     article: IArticle[];

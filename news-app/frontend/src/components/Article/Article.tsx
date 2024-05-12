@@ -1,5 +1,5 @@
 import React from "react";
-import { IArticle } from "common";
+import { IArticle } from "../../common";
 
 export interface ArticleProps {
     articles: IArticle;

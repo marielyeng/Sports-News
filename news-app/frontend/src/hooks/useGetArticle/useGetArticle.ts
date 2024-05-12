@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { GET_ARTICLE, IGetArticleQueryResponse } from "data/queries";
+import { GET_ARTICLE, IGetArticleQueryResponse } from "../../data/queries";
 
 export const useGetArticle = (id: number) => {
     const { loading, data, error } = useQuery<IGetArticleQueryResponse>(GET_ARTICLE, {

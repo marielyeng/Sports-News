@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { useMemo } from "react";
-import { config } from "config";
+import { config } from "../../config";
 
 export const useApolloClient = () => {
     return useMemo(() => {

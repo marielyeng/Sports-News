@@ -1,17 +1,13 @@
 {
     "compilerOptions": {
-        "target": "ES6",
+        "rootDirs": ["src"],
+        "target": "ES2017",
         "lib": ["ES6", "ES5", "ES7", "DOM"],
-        "allowJs": true,
         "esModuleInterop":true,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "module": "ES2022",
-        "outDir": "./build",
+        "module": "ESNext",
+        "outDir": "dist",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "skipLibCheck": true
     },
     "exclude": ["node_modules", "build"]
 }
