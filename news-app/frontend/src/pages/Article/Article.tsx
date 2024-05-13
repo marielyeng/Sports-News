@@ -4,13 +4,14 @@ import styled from "styled-components";
 import { useGetArticle } from "../../hooks/useGetArticle";
 import { Article } from "../../components/Article";
 import { IArticle } from "../../common";
+import { GenericError } from "../../components/GenericError";
 
 export const ArticlePage: React.FC = () => {
     const { id } = useParams<{id: string}>();
     const { loading, data, error } = useGetArticle(Number(id));
 
     if (loading) return <>Loading...</>;
-    if (error) return <>Error: {error.message}</>
+    if (error) return <GenericError />
 
     const article = data?.article;
 

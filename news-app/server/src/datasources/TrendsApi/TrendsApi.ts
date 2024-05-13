@@ -6,7 +6,7 @@ class TrendsApi extends RESTDataSource {
 
     public async getAllTrends(type?: string): Promise<IArticleDto[]> {
         try {
-            const trends: IArticleDto[] = type !==undefined ? await this.get(`/trends?type=$${type}`) : await this.get(`/trends`);
+            const trends: IArticleDto[] = type !==undefined ? await this.get(`/trends?type=${type}`) : await this.get(`/trends`);
 
             if (!trends) {
                 throw new Error('Error while fetching data');

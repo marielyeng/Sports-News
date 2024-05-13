@@ -1,6 +1,6 @@
 const typeDefs =`
     type Articles {
-        id: ID
+        id: Int
         type: String
         title: String
         description: String

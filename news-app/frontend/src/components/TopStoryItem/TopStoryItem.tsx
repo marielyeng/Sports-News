@@ -1,5 +1,6 @@
 import React from "react";
 import { IArticle } from "../../common";
+import styled from "styled-components";
 
 export interface IArticleItemProps {
     articles: IArticle;
@@ -18,7 +19,14 @@ export const TopStoryItem: React.FC<IArticleItemProps> = ({
 
     return (
         <div>
-            <h2 onClick={handleTopStoryClick}>{title}</h2>
+            <Heading onClick={handleTopStoryClick}>{title}</Heading>
         </div>
     );
 };
+
+const Heading = styled.h3`
+    &:hover {
+        color: green;
+        cursor: pointer;
+    }
+`;

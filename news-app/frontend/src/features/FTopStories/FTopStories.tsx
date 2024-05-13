@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { TopStoryItem } from "../../components/TopStoryItem";
 import { useGetTopStory } from "../../hooks/useGetTopStories";
 import styled from "styled-components";
+import { GenericError } from "../../components/GenericError";
 
 export interface IArticleProps {
     type?: string;
@@ -15,7 +16,7 @@ export const FTopStories: React.FC<IArticleProps> = ({ type }) => {
     const navigate = useNavigate();
 
     const handleTrendClick = (id: number) => {
-        navigate(`/article/:${id}`);
+        navigate(`/article/${id}`);
     }
 
     if (loading) {
@@ -23,7 +24,7 @@ export const FTopStories: React.FC<IArticleProps> = ({ type }) => {
     }
 
     if (error) {
-        return <>{error?.message}</>
+        return <GenericError />
     }
 
     return (
@@ -46,7 +47,7 @@ const Container = styled.div`
     border-radius: 6px;
     box-shadow: 1px 1px 2px gray;
     width: 375px;
-    height: 100%;
+    height: 90%;
     position: relative;
 `;
 

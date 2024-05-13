@@ -26,11 +26,12 @@ class ArticleApi extends RESTDataSource {
 
     public async getArticleById(id: number): Promise<IArticleDto> {
         try {
+
             const params: {[ key: string ]: string} = {};
             
-            const articleId = id.toString();
-            const article: IArticleDto = await this.get(`article/${articleId}`, { params });
-            return article;
+                const articleId = id.toString();
+                const article: IArticleDto = await this.get(`article/${articleId}`, { params });
+                return article;
             
         } catch(error) {
             console.log('An error occurred');

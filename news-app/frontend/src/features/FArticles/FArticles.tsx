@@ -3,6 +3,7 @@ import { IArticle } from "../../common";
 import { ArticleItem } from "../../components/ArticleItem";
 import { useNavigate } from "react-router-dom";
 import { useGetArticles } from "../../hooks/useGetArticles";
+import { GenericError } from "../../components/GenericError";
 
 export interface IArticleProps {
     type?: string;
@@ -27,7 +28,7 @@ export const FArticles: React.FC<IArticleProps> = ({type, limit}) => {
     }
 
     if (error) {
-        console.log('Error occurred')
+        return <GenericError />
     }
     return (
         <div>
