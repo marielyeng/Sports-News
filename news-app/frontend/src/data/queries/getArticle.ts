@@ -6,7 +6,7 @@ export interface IGetArticleQueryResponse {
 }
 
 export const GET_ARTICLE = gql`
-    query getArticleQuery($id: Int) {
+    query getArticleQuery($id: ID) {
         article(id: $id) {
             id
             type

@@ -1,6 +1,6 @@
 const typeDefs =`
     type Articles {
-        id: Int
+        id: ID
         type: String
         title: String
         description: String
@@ -18,7 +18,7 @@ const typeDefs =`
     type Query {
         articles(type: String, limit: Int): [Articles]
         trends(type: String): [Trends]
-        article(id: Int): [Articles]
+        article(id: ID): Articles
     }
 `
 

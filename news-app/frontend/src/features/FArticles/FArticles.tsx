@@ -15,16 +15,11 @@ export const FArticles: React.FC<IArticleProps> = ({type, limit}) => {
     const navigate = useNavigate();
 
     const handleArticleOnClick = (id: number) => {
-        navigate('/article/:id');
-        console.log('hello: ', id)
-    }
-
-    if (!data) {
-        console.log(`Data is: ${data}`)
+        navigate(`/article/${id}`);
     }
 
     if (loading) {
-        console.log('Loading...')
+        return<>Loading...</>
     }
 
     if (error) {

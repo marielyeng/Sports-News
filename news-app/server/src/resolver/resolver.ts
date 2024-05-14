@@ -24,7 +24,7 @@ const resolvers = {
             { id }: {id: number},
             { dataSources }: { dataSources: IDataSources}
         ) => {
-            const article = await dataSources.articleApi.getArticleById(id)
+            const article = await dataSources.articleApi.getArticleById(id);
             return article;
         }
     }

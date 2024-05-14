@@ -7,12 +7,12 @@ export const GenericError: React.FC = () => {
     };
 
     return (
-        <div>
+        <Main>
             <h2>We had a problem loading this page.</h2>
             <p>Try again shortly.</p>
             <br />
             <Button onClick={onReloadBtnClick}>Reload</Button>
-        </div>
+        </Main>
     );
 };
 
@@ -25,3 +25,8 @@ const Button = styled.button`
     cursor: pointer;
     font-size: 22px;
 `
+
+const Main = styled.div`
+    text-align: center;
+    margin: 16px 0px;
+`;
