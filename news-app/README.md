@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+**Sports News App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a sports news application that provides users with the latest updates and news from the world of sports. The application uses mock JSON data to simulate real-world sports news articles. It's built using TypeScript, ReactJS, GraphQL, and a BFF (Backend For Frontend) architecture.
 
-## Available Scripts
+# Features
+View the latest sports news articles
+Filter articles by type (e.g., basketball, football)
+View detailed information for each article
+Easy-to-use interface
+Technologies Used
+TypeScript: TypeScript is used to add static typing to JavaScript, providing better tooling and scalability.
+ReactJS: ReactJS is a JavaScript library for building user interfaces. It's used to create the frontend of the sports news app, providing a responsive and interactive experience.
+GraphQL: GraphQL is a query language for APIs. It's used to efficiently retrieve data from the backend server and provides flexibility in defining data requirements.
+BFF (Backend For Frontend): The BFF architecture pattern involves creating a dedicated backend server for the frontend application. This allows for better separation of concerns and flexibility in handling frontend-specific requirements.
+Getting Started
+To get started with the Sports News App, follow these steps:
 
-In the project directory, you can run:
+Clone the repository: git clone <repository-url>
+Install dependencies: npm install
+Start the development server: npm start
+Open your browser and navigate to http://localhost:3000
+Folder Structure
+java
+Copy code
+sports-news-app/
+│
+├── src/
+│   ├── components/
+│   │   ├── ArticleCard.tsx
+│   │   ├── ArticleDetails.tsx
+│   │   └── ...
+│   ├── graphql/
+│   │   ├── queries.graphql
+│   │   └── ...
+│   ├── services/
+│   │   ├── articleApi.ts
+│   │   └── ...
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+│
+├── public/
+├── README.md
+└── package.json
 
-### `npm start`
+# Contributing
+Contributions are welcome! If you'd like to contribute to the Sports News App, feel free to open a pull request with your changes. Please adhere to the code of conduct and contributing guidelines when submitting contributions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# License
+This project is licensed under the MIT License.
