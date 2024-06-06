@@ -10,8 +10,8 @@
   "scripts": {
     "test": "react-scripts test",
     "start": "concurrently \"yarn workspace server start\" \"yarn workspace frontend start\" \"yarn workspace mocks start\"",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Mariel Suing",
   "license": "ISC",

@@ -20,6 +20,4 @@ const Main = styled.div`
     border: 0.5px solid black;
     border-radius: 6px;
     padding: 12px;
-
-   
 `;

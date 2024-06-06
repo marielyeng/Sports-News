@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 import { IArticle } from "../../common";
 
 export interface IGetArticleQueryResponse {
-    article: IArticle[];
+    article: IArticle;
 }
 
 export const GET_ARTICLE = gql`
